@@ -1,0 +1,26 @@
+<div ng-controller="CarouselCtrl">
+  <div style="height: 500px">
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{slide.id}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Auto Image</h2>
+            </div>
+            <div class="col-md-6">
+                <p>Auto Image has been the premier window tinting company serving the peninsula and bay area for the past 25 years. It's no wonder we're known for being one of the best in our field. In a business where many window tinting companies "come and go" we are committed to serving our customer's needs for the long term. At Auto Image, we pride ourselves in providing our customer with high quality installations along with superior customer service, that is why a large portion of our business comes from repeat customers and referrals from satisfied customers.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+            </div>
+        </div>
+</div>
